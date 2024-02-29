@@ -1,0 +1,26 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /auth
+
+jwt:
+  secret: secret
+  lifetime: 30m
+
+db:
+  url: jdbc:mysql://localhost:3306/onlineShopDb?createDatabaseIfNotExist=TRUE
+  username: root
+  password: 0d5u8n8g
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+# Дополнительные настройки
+#logging:
+#  level:
+#    org.hibernate.SQL: debug
+#    org.hibernate.type: trace
